@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300;400;500&family=Bangers&family=Bebas+Neue&family=Blaka&family=Bowlby+One+SC&family=Caveat:wght@500;600;700&family=Indie+Flower&family=Luckiest+Guy&family=Mouse+Memoirs&family=Mukta:wght@200;800&family=Patrick+Hand&family=Permanent+Marker&family=Press+Start+2P&family=Raleway:wght@900&family=Roboto:wght@300;400&family=Silkscreen:wght@400;700&family=Staatliches&display=swap');
+
+*{
+    font-family:Anek Telugu;
+}
+
+body{
+    margin: 0px;
+    background-color:whitesmoke;
+}
+
+header{
+    background-color: whitesmoke;
+    padding-top: 5px;
+}
+
+header> article> h1{
+    text-align: center;
+    margin-bottom: 0px;
+    color: #091166;
+}
+
+header> article> p{
+    text-align: center;
+}
+
+.imagem{
+    width: 15%;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+nav{
+    text-align: center;
+    background-color: #091166; 
+    margin: 0px;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+nav> a.menu{
+    background-color:#09116683;
+    color: white;
+    padding: 5px;
+    text-decoration: underline;
+
+}
+
+nav> a.menu:hover{
+    color: #5B67EA;
+    background-color: white;
+    text-decoration: none;
+}
+
+main{
+    background-color: white;
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 20px;
+}
+
+
+
+h2{
+    text-align: center;
+}
+
+div.box{
+    width: 80px;
+	display: inline-block;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+  }
+
+img {
+    width: 100%;
+    height: 80px;
+  }
+
+p{
+    text-indent: 20px;
+    text-align: center;
+}
+
+h3{
+    color: white;
+    background-image: linear-gradient(to right, #323880, white);
+    text-indent: 70px;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+main> a{
+    background-color: #091166;
+    color: white;
+    padding: 3px;
+    text-decoration: none;
+    border-radius: 0px 3px 0px 3px;
+    margin-left: 60%;
+}
+
+main> a:hover{
+    background-color: whitesmoke;
+    color: #091166;
+    padding: 3px;
+    text-decoration: none;
+    border-radius: 0px 3px 0px 3px;
+    margin-left: 60%;
+    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.575);
+}
+
+footer{
+    background-color: #091166;
+    color: white;
+    margin: 0px;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px;
+}
+
+iframe{
+    margin-top: 0px;
+    width: 100%;
+    padding: 40px;
+}
+
+.imgnaofunciona{
+    width: 200px;
+    height: 200px;
+}
+
+a.linksyoutube{
+    text-decoration: underline;
+    background-color: white;
+    padding: 2px;
+    border-radius: 0px 3px 0px 3px;
+}
+
+a.linksyoutube:hover{
+    text-decoration: none;
+    background-color: #091166c7;
+    padding: 2px;
+    border-radius: 0px 3px 0px 3px;
+    color: white;
+}
+
+
+
+
+
+
+

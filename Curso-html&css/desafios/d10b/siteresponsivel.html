@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando</title>
+</head>
+<style>
+
+@font-face {
+    font-family:titulo;
+    src: url(fon/SUSH!.ttf);
+}
+
+    body{
+        margin: 0px;
+        background-color: rgb(210, 255, 174);
+    }
+
+    header{
+        background-color: rgb(23, 78, 30);
+        margin: 0px;
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+        outline-color: rgb(255, 255, 255);
+        outline-width: 2px;
+        outline-style: solid;
+        margin-bottom: 20px;
+        
+    }
+    
+    header> h1{
+        text-align: center;
+        margin: auto;
+        font-size: 50px;
+        height: 220px;
+        padding-top: 80px;
+        font-family:titulo;
+        padding-bottom: 50px;
+        width: 100%;
+        text-shadow: 1px 1px 1px rgb(255, 255, 255);
+        
+    }
+
+    nav{
+        text-align: center;
+    }
+
+    nav> a{
+        background-color: rgb(29, 139, 38);
+        color: white;
+        text-decoration: none;
+        border-radius: 3px 0px 3px 0px;
+    }
+
+    nav> a:hover{
+        background-color: white;
+        color: rgb(29, 139, 38);
+        text-decoration: underline;
+        width: 10px;
+        height: 50px;
+    }
+    
+    main{
+        margin: auto;
+        background-color: whitesmoke;
+        border-radius: 10px 0px 10px 0px;
+        padding: 30px;
+        
+
+        max-width: 1000px;
+        min-width: 320px;
+    }
+
+    article> h2{
+        background-image:linear-gradient(to right rgb(204, 19, 19) rgb(68, 90, 68));
+        width: 400px;
+        border-radius: 10px 0px 10px 0px;
+        margin-left: 20px;
+        padding-left: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-weight: bold;
+        font-size: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    article> p{
+        text-indent: 20px;
+        text-align: center;
+    }
+
+    img{
+        width: 100%;
+        border-radius: 0px 10px 0px 10px;
+        
+    }
+
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    footer{
+        background-color: rgb(14, 44, 0);
+    }
+
+    footer> p{
+        color: white;
+        height: 250px;
+        text-align: center;
+        padding-top: 125px;
+        outline: 2px;
+        outline-color: rgb(255, 255, 255);
+        outline-style: solid;
+        font-size: 30px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Praticando Responsividade</h1>
+        <nav>
+            <a href="">Como deixar um site responsivo?</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Olá Mundo</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate id autem saepe amet nesciunt excepturi officiis impedit corporis, quos perferendis! Optio ex sint tenetur aliquam sequi repudiandae dolores, excepturi illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam facilis perspiciatis ea, maiores beatae sunt dolores, harum pariatur aut sequi recusandae perferendis voluptate, eaque enim laboriosam officiis deserunt accusantium obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ab, fugiat laboriosam, rerum quae minima natus excepturi earum totam quo ad vitae aut? Error, minima dolores recusandae delectus explicabo commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ad et nemo exercitationem quod ab aut, earum ratione ut enim adipisci repudiandae neque quae dolore natus nulla cum. Molestiae, neque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolore porro distinctio nesciunt rerum quo numquam quas non, iure nam architecto dolores consequatur placeat voluptate voluptas sit est facilis. Ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptate vel quo nesciunt corporis nobis, ut perspiciatis laudantium labore, similique iusto quod tempora quos recusandae id. Esse error veritatis aliquid. </p>
+                
+                <picture>
+                    <source media="(max-width:520px )" srcset="imagem/irina-blok-pq.jpg" sizes="">
+                    <img src="imagem/irina-blok.jpg" alt="#">
+                </picture>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p><i>Desenvolvido por Victor fernandes</i></p>
+    </footer>
+</body>
+</html>

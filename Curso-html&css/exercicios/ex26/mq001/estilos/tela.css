@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/*Estilos para telas*/
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: gray;
+    padding-top: 1px;
+    margin: auto;
+    text-align: center;
+    margin: 0px;
+}
+
+menu{
+    margin: auto;
+    text-align: center;
+    margin-right: 60px;
+}
+
+menu li{
+    padding: 10px;
+    background-color: darkslategray;
+    text-align: center;
+    margin: auto;
+}
+    
+menu ul{
+    list-style-type: none; 
+    margin: 0px;
+}
+
+main{
+    margin-left: 200px;
+    margin-right: 180px;
+    margin-top:0px;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 30px;
+}
+
+article> h2{
+    margin: 0px;
+}
+
+

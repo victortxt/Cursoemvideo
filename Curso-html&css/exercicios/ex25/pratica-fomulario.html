@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<style>
+    div{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+</style>
+<body>
+    <h1>Exemplo de Formulario na pratica</h1>
+    <div>
+        <label for="in1">Numero 1</label>
+        <input type="number" name="n1" id="in1" required min="1" max="50" oninput="isoma.innerHTML= Number(in1.value) + Number(in2.value)">
+    </div>
+    <div>
+        <label for="in2">Numero 2</label>
+        <input type="number" name="n2" id="in2" required min="1" max="50" oninput="isoma.innerHTML= Number(in1.value) + Number(in2.value)">
+    </div>
+    
+    <label for="isoma">soma</label>
+    <output name="soma" id="isoma" ></output>
+
+    <div>
+        <label for="inum">Numero</label>
+        <input type="range" name="num" id="inum" required oninput="iscroll.innerHTML = Number(inum.value)"  >
+        <output name="scroll" id="iscroll"></output>
+    </div>
+
+    <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </div>
+</body>
+</html>

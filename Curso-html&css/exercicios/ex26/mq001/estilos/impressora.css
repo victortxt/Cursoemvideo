@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/*Estilos para impressoras*/
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+*{
+    line-height: 40px;
+}
+
+menu{
+    display: none;
+}
+
+article::after{
+    content: 'Este artigo foi desenvolvido por Victor Fernandes Neves da Silva';
+}

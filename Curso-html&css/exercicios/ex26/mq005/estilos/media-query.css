@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/*Typical Device Breakspoints
+
+Pequenas Telas: max(600px)
+Celular: min (600px) max (768px)
+Tablet: min (768px) max (992px)
+Desktop: min (992px) max (1200px)
+Tv/Telas Grandes: more 1200px
+*/
+
+@media screen and (min-width: 768px) {
+    i#toc{
+        display: none;
+    }
+
+    nav{
+        display:block;
+    }
+
+    ul{
+        text-align: left;
+    }
+
+    nav> ul> li{
+        display: inline-block;
+    }
+    
+    main{
+        width: 50vw;
+    }
+}
