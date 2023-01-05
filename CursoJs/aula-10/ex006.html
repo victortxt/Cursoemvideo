@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        border: 2px solid black;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #output{
+        border: 2px solid black;
+        height: 20px;
+        width: 80%;
+        text-align: center;
+        margin-top: 40%;
+    }
+</style>
+<body>
+    <div class="box">
+        <div onmouseenter="entrou()" onmousedown="segura()" onmouseout="saiu()"  onclick="clique()" id="output">interagir</div>
+    </div>
+    <script>
+        var res = document.querySelector("#output")
+        function clique(){
+            res.innerHTML = ("Voce clicou")
+            res.style.background = 'red'
+        }
+
+        function entrou(){
+            res.innerHTML = ("Voce entrou")
+            res.style.background = 'green'
+        }
+
+        function saiu(){
+            res.innerHTML = ("Voce saiu")
+            res.style.background = 'blue'
+        }
+
+        function segura(){
+            res.innerHTML = ("Voce segurou")
+            res.style.background = 'pink'
+        }
+
+        function entrou(){
+            res.innerHTML = ("Voce entrou")
+            res.style.background = 'yellow'
+        }
+    </script>
+</body>
+</html>

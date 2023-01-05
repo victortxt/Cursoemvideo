@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="n1" id="in1"> + 
+    <input type="number" name="n1" id="in2">
+    <input onclick="enviar()" type="submit" value="Enviar">
+    <div id="res">
+        Qual será o resultado ?
+    </div>
+    <script>
+            var msg = ""
+        function enviar(){
+            var n1 = document.querySelector("#in1")
+            var n2 = document.querySelector("#in2")
+            var res = document.querySelector("#res")
+            var num1 = Number(n1.value)
+            var num2 = Number(n2.value)
+            var s = num1 + num2
+            res.innerHTML = (`${num1} + ${num2} = ${s}`)
+        }
+
+    </script>
+</body>
+</html>

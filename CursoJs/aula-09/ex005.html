@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(70, 135, 196);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1" >Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo usa <strong>DOM</strong> em JavaScript</p>
+    <div id="mensagem" >Clique em mim</div>
+    <script>
+        /*
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(p1.innerHTML)
+        var msg = window.document.getElementById('mensagem')
+        msg.style.background = 'blue'
+        msg.style.color = 'rgb(70, 135, 196)'
+        msg.innerText = ('Ola' + msg.innerText)*/
+
+        /*var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(p1.innerHTML)
+        var msg = window.document.getElementById('mensagem')
+        msg.style.background = 'black'
+        msg.innerText = 'ola mundo' */
+
+        /*var msg = window.document.getElementsByName('mensagem')[0]
+        msg.innerText = 'Bom dia'
+        msg.style.background = 'red'*/
+
+        /*var tit = window.document.getElementsByTagName('h1')[0]
+        tit.innerText = 'ola'*/
+
+        var s = window.document.querySelector('div#mensagem')
+        s.style.color = 'blue'
+    </script>
+</body>
+</html>

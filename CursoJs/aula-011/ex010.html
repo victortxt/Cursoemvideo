@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Velocidade do seu veiculo</h1>
+    <form action="">
+        <label for="inum">Quantos km você está agora?</label> <br>
+        <input type="number" name="num" id="inum">
+        <input onclick="botao()" type="button" value="Enviar">
+    </form>
+    <div id="res">
+        Você seria multado ?
+    </div>
+    <script>
+        var max = 30;
+        var min = 10;
+        function botao(){
+        var n1 = document.querySelector("#inum");
+        var num1 = Number(n1.value);
+        var res = document.querySelector("#res");
+            if(max < num1){
+                res.innerHTML = (`A sua velocidade de ${num1}km excede a velocidade de ${max}km. Multado!`)
+            }else{
+                res.innerHTML = (`A sua velocidade de ${num1} está dentro das normas. Continue assim!`)
+            }
+        }
+    </script>
+</body>
+</html>

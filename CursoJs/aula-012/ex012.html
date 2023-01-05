@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input[type="number"]{
+        width: 35px;
+    }
+</style>
+<body>
+    <input type="number" name="hr" id="ihr" max="23" min="0"> horas
+    <button onclick="button()">Enviar</button>
+    <div id="res"></div>
+    <hr>
+    <button onclick="hour()">Horario</button>
+    <div id="output"></div>
+    <script>
+            var tempo = new Date();
+            var agora = tempo.getHours();
+            var output = document.querySelector("#output")
+        function hour(){
+            output.innerHTML = (`${agora} horas`) 
+            if(agora < 12 && agora > 4){
+                output.innerHTML = (`Agora são ${agora} horas, Bom Dia`)
+            }else if(agora > 12 && agora < 18){
+                output.innerHTML = (`Agora são ${agora} horas, Boa Tarde`)
+            }else if(agora >= 18 && agora < 23){
+                output.innerHTML = (`Agora são ${agora} horas, Boa Noite`)
+            }else if( agora == 23 || agora > 0 && agora <= 5){
+                output.innerHTML = (`Agora são ${agora} horas, Boa Madrugada`)
+            }else if(agora == 12){
+                output.innerHTML = (`Agora são ${agora} horas, hora do almoço`)
+            }
+        }
+        
+        function button(){
+            var hours = document.querySelector("#ihr");
+            var output = document.querySelector("#res");
+            var num1 = Number(hours.value)
+            if(num1 < 12 && num1 > 4){
+                output.innerHTML = (`Agora são ${num1} horas, Bom Dia`)
+            }else if(num1 > 12 && num1 < 18){
+                output.innerHTML = (`Agora são ${num1} horas, Boa Tarde`)
+            }else if(num1 >= 18 && num1 < 23){
+                output.innerHTML = (`Agora são ${num1} horas, Boa Noite`)
+            }else if( num1 == 23 || num1 > 0 && num1 <= 5){
+                output.innerHTML = (`Agora são ${num1} horas, Boa Madrugada`)
+            }else if(num1 == 12){
+                output.innerHTML = (`Agora são ${num1} horas, hora do almoço`)
+            }
+        }
+
+    </script>
+</body>
+</html>
