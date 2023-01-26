@@ -1,0 +1,26 @@
+body{
+    background-color: blue;
+}
+
+.container{
+    background-color: white;
+    width: 90vw;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+input[type="number"]{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#output{
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}

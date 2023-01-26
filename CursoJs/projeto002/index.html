@@ -4,40 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <title>Projeto002</title>
 </head>
 <body>
-    <header>
-        <h1>Verificador de idade</h1>
-    </header>
-        <section  class="card">
-                <form action="">
-                    <div class="formulario">
-                        <label for="inas">Ano de nascimento</label>
-                        <input type="number" name="nas" id="inas"> <br>
-                    </div>
-                    <label for="isex">Sexo</label>
-                    <input type="radio" name="sex" id="imas">
-                    <label for="imas">Masculino</label>
-                    <input type="radio" name="sex" id="ifem">
-                    <label for="ifem">Feminino</label>
-                </form>
-            <input onclick="button()" class="verifica" type="submit" value="Verificar">
-                <div id="output">
-                    preencha os dados acima para ver os resultados
-                </div>
-            <section class="container-outputs">
-                <div id="picture">
-                    <img src="img/homem-bebe.jpg" alt="">
-                </div>
-            </section>
-        </section>
-        <footer>
-            <p>@Cursoemvideo</p>
-        </footer>
-    <script> 
+
+    <h1>Verificador de idade</h1>
+    <section id="card">
+
         
-    </script>
+            <label for="inascimento">Nascimento</label>
+            <input type="number" name="nas" id="inascimento" placeholder="Data de Nascimento" minlength="1800" required>
+
+            <br>
+
+            <label for="sex">Sexo</label>
+
+            <br>
+
+            <label for="imas">Masculino</label>
+            <input type="radio" name="sex" id="imas" value="h">
+            <label for="ifem">Feminino</label>
+            <input type="radio" name="sex" id="ifem" value="m">
+            
+            <br>
+            <button onclick = "verificar()">Enviar</button>
+
+
+        <section class="content">
+            <div id="output">
+                Preencha os formulários
+            </div>
+            <div id="picture">
+                <img id="imagem-output" src="" alt="">
+            </div>
+        </section>
+    </section>
+    <script src = script.js></script>
+
 </body>
 </html>
